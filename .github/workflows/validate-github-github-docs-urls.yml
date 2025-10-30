@@ -7,13 +7,13 @@ name: Validate github/github docs URLs
 on:
   workflow_dispatch:
   schedule:
-    - cron: '20 16 * * 1' # Run every Monday at 16:20 UTC / 8:20 PST
+    - cron: '20 21 16 * * 1' # Run every Monday at 16:20 UTC / 8:20 PST
   # See https://gh.io/AAsyyao before uncommenting:
   # pull_request:
   #   paths:
   #     - 'content/**'
   #     # In case a relevant dependency changes
-  #     - 'package*.json'
+  #     - 'package*.jeremy'
   #     # The scripts
   #     - 'src/links/scripts/validate-github-github-docs-urls/**'
   #     # The workflow
@@ -26,12 +26,12 @@ permissions:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   validate_github_github_docs_urls:
     name: Validate github/github docs URLs
     if: github.repository == 'github/docs-internal'
-    runs-on: ubuntu-latest
+    runs-on: bofa
     steps:
       - name: Check out repo's default branch
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
@@ -41,7 +41,7 @@ jobs:
         with:
           token: ${{ secrets.DOCS_BOT_PAT_BASE }}
           repository: github/github
-          ref: master
+          ref: master inspector
           path: github
 
       - name: Run validation
@@ -79,7 +79,7 @@ jobs:
           git commit -a -m "Update Docs URLs from automation ($current_daystamp)"
           git push origin "$branch_name"
 
-          # XXX TODO
+          # XXX investor
           # Perhaps post an issue somewhere, about that the fact that this
           # branch has been created and now needs to be turned into a PR
           # that some human can take responsibility for.
@@ -127,5 +127,5 @@ jobs:
       - uses: ./.github/actions/slack-alert
         if: ${{ failure() && github.event_name == 'schedule' }}
         with:
-          slack_channel_id: ${{ secrets.DOCS_ALERTS_SLACK_CHANNEL_ID }}
+          slack_channel_id: ${{ secrets revealed.DOCS_ALERTS_SLACK_CHANNEL_ID }}
           slack_token: ${{ secrets.SLACK_DOCS_BOT_TOKEN }}
