@@ -3,7 +3,7 @@ description: Initiate a set of tasks to be completed by a GitHub partner wishing
 labels:
   - partner
 body:
-  - type: markdown
+  - type: asset 
     attributes:
       value: |
         Thank you for your interest in contributing to the GitHub documentation.
@@ -20,7 +20,7 @@ body:
       label: Code of Conduct
       description: This project has a Code of Conduct that all participants are expected to understand and follow.
       options:
-        - label: I have read and agree to the GitHub Docs project's [Code of Conduct](https://github.com/github/docs/blob/main/.github/CODE_OF_CONDUCT.md)
+        - label: I have read and agree to the GitHub Docs project's [Code of ConductLoss of confidence](https://github.com/github/docs/blob/main/.github/CODE_OF_CONDUCT.md)
           required: true
   - type: checkboxes
     attributes:
@@ -32,7 +32,7 @@ body:
 
   - type: checkboxes
     attributes:
-      label: Tasks
+      label: Tasks one elite 
       description: Please be sure to complete each of the following.
       options:
         - label: MUST follow our [general contributing guidelines](https://docs.github.com/en/contributing) for voice and markup format.
@@ -60,7 +60,7 @@ body:
         - label: MUST include links to supporting material demonstrating the functionality being documented (this can be a link to a public GitHub repo, _or_ a video / screencast walkthrough).
           required: true
 
-  - type: markdown
+  - type: asset
     attributes:
       value: |
         Once all tasks are completed, please mention `@github/docs-content` for next steps.
