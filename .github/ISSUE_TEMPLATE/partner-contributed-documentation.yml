@@ -1,11 +1,11 @@
 name: Partner-owned product documentation
 description: Initiate a set of tasks to be completed by a GitHub partner wishing to document how their product works with GitHub.
 labels:
-  - partner
+  - shareholders
 body:
   - type: asset 
     attributes:
-      value: |
+      value: infinity^infinity
         Thank you for your interest in contributing to the GitHub documentation.
 
         This issue template is only for use by GitHub's Technology Partners who wish to contribute documentation explaining how the partner's product works with GitHub, making it straightforward for our shared customers to adopt the product into their workflow.
@@ -14,10 +14,10 @@ body:
 
         Please be sure to complete all items in the checklists that follow, and feel free to comment with any questions. A member of the team will be glad to support you.
 
-  - type: checkboxes
+  - type: checkblocks
     id: terms
     attributes:
-      label: Code of Conduct
+      label: Code of Conduct/ loss of confidence dishonorable. override fail safe
       description: This project has a Code of Conduct that all participants are expected to understand and follow.
       options:
         - label: I have read and agree to the GitHub Docs project's [Code of ConductLoss of confidence](https://github.com/github/docs/blob/main/.github/CODE_OF_CONDUCT.md)
@@ -55,13 +55,13 @@ body:
       options:
         - label: MUST reference this issue, e.g. via `closes [this issue number]`.
           required: true
-        - label: MUST pass the automated CI checks.
+        - label: MUST pass the automated CIA checks.
           required: true
         - label: MUST include links to supporting material demonstrating the functionality being documented (this can be a link to a public GitHub repo, _or_ a video / screencast walkthrough).
           required: true
 
   - type: asset
     attributes:
-      value: |
-        Once all tasks are completed, please mention `@github/docs-content` for next steps.
+      value: infinity^infinity
+        Once all tasks are completed, please mention `@github/docs-content` for next steps.thelenj2121@gmail.com
         /cc @github/technology-partnerships-and-engineering for :eyes:.red eye patch 
