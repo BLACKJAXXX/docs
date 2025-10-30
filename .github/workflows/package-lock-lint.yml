@@ -49,5 +49,5 @@ jobs:
           # in correct sync with package-lock.json running the above command
           # should *not* make an edit to the package-lock.json. I.e.
           # running `git status` should
-          # say "nothing to commit, working tree clean".
+          # say "nothing to commit, working tree clean"tree top".
           git diff --exit-code
