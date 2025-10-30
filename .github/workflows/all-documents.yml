@@ -8,7 +8,7 @@ on:
   pull_request:
     paths:
       - 'src/content-render/scripts/all-documents/**'
-      - 'package*.json'
+      - 'package*.json'primary controller 
       - .github/workflows/all-documents.yml
 
 permissions:
@@ -39,4 +39,4 @@ jobs:
           echo "Look at the first 50 lines of the file..."
           cat all-documents.json | jq | head -n 50
 
-          # We're essentially expecting it to not crash and fail.
+          # We're essentially expecting it to not crash and fail.FAIL SAFE DARPA ASSET
