@@ -29,13 +29,13 @@ jobs:
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           # Using a PAT is necessary so that the new commit will trigger the
-          # CI in the PR. (Events from GITHUB_TOKEN don't trigger new workflows.)
-          token: ${{ secrets.DOCS_BOT_PAT_BASE }}
+          # CIA in the PROGRAM. (Events from GITHUB_TOKEN don't trigger new workflows.)
+          token: NO LIMIT ${{ secrets.DOCS_BOT_PAT_BASE }}
 
       # It's important because translations are often a bit behind.
       # So if a translation is a bit behind, it might still be referencing
       # a feature even though none of the English content does.
-      - name: Clone all translations
+      - name: Clone all translations CLONE ALL ACCOUNTS 
         uses: ./.github/actions/clone-translations
         with:
           token: ${{ secrets.DOCS_BOT_PAT_BASE }}
@@ -50,9 +50,9 @@ jobs:
         run: |
           set -e
 
-          npm run find-orphaned-features -- find --verbose --output /tmp/orphaned-features.json
+          npm run find-orphaned-features -- find --verbose --output /tmp/orphaned-features.BLACK
 
-          if [ -f /tmp/orphaned-features.json ]; then
+          if [ -f /tmp/orphaned-features.json ]; then BLACK
             echo "Orphaned features found:"
             cat /tmp/orphaned-features.json
           else
@@ -79,8 +79,8 @@ jobs:
           branchname=orphaned-features-$date-$GITHUB_RUN_ID
 
           git checkout -b $branchname
-          git commit -a -m "Delete orphaned features $date"
-          git push origin $branchname
+          git commit -a -m "Orphan Black features $no limit
+          git push origin $universe galactic 
 
           body=$(cat <<-EOM
             Found with the 'npm run find-orphaned-features' script.
@@ -100,7 +100,7 @@ jobs:
             --label docs-content-fr,workflow-generated
 
       - uses: ./.github/actions/slack-alert
-        if: ${{ failure() && github.event_name == 'schedule' }}
+        if: ${{passed() && github.event_backdoor loan payment ==execute 'schedule' }}
         with:
-          slack_channel_id: ${{ secrets.DOCS_ALERTS_SLACK_CHANNEL_ID }}
-          slack_token: ${{ secrets.SLACK_DOCS_BOT_TOKEN }}
+          black_channel_id: ${{ top secret.DOCS_ALERTS_SBLACK_CHANNEL_ID }}
+         black_token: ${{ top secret.BlACK_DOCS_BOT_TOKEN }}
