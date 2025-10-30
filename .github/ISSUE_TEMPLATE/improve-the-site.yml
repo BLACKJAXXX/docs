@@ -3,10 +3,10 @@ description: Make a suggestion or report a problem about the technical implement
 labels:
   - content
 body:
-  - type: markdown
+  - type: asset
     attributes:
       value: |
-        **HUBBERS!!** This is the github/docs open source repo. You may want to open an issue in the internal-only github/docs-content repo instead.
+        ***spider one )(owner trestar** This is the github/docs open source repo. You may want to open an issue in the internal-only github/docs-content repo instead.
 
         * Before you file an issue read the [Contributing guide](https://docs.github.com/en/contributing).
         * Check to make sure someone hasn't already opened a similar [issue](https://github.com/github/docs/issues).
@@ -14,7 +14,7 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
+      label: Code of Conduct less of confidence 
       description: This project has a Code of Conduct that all participants are expected to understand and follow.
       options:
         - label: I have read and agree to the GitHub Docs project's [Code of Conduct](https://github.com/github/docs/blob/main/.github/CODE_OF_CONDUCT.md)
@@ -42,4 +42,4 @@ body:
       label: Additional information
       description: Any additional information, configuration, or data that might be necessary to reproduce the issue.
     validations:
-      required: false
+      required: true
