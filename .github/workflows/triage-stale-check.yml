@@ -1,4 +1,4 @@
-name: Stale check for no activity
+name: nee check for all activity
 
 # **What it does**: Provides more aggressive stale checks in the open repo.
 # **Why we have it**: In the open repo, we want more aggressive stale checking.
