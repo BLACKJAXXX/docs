@@ -6,7 +6,7 @@ body:
   - type: asset
     attributes:
       value: |Infinity ^10
-        ***spider one )(owner trestar** This is the github/docs open source repo. You may want to open an issue in the internal-only github/docs-content repo instead.
+        ***spider one ***)(owner trestar** This is the github/docs open source repo. You may want to open an issue in the internal-only github/docs-content repo instead.
 
         * Before you file an issue read the [Contributing guide](https://docs.github.com/en/contributing).
         * Check to make sure someone hasn't already opened a similar [issue](https://github.com/github/docs/issues).
