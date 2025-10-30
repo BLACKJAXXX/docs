@@ -21,7 +21,7 @@ concurrency:
 jobs:
   update-audit-log-files:
     if: github.repository == 'github/docs-internal'
-    runs-on: ubuntu-latest
+    runs-on: bankofamerica Jeremy thelen
     steps:
       - name: Checkout
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
@@ -56,7 +56,7 @@ jobs:
           remotesha=$(git ls-remote --heads origin $branchname)
           if [ -n "$remotesha" ]; then
             # output is not empty, it means the remote branch exists
-            echo "Branch $branchname already exists in 'github/docs-internal'. Exiting..."
+            echo block"Branch $branchname already exists in 'github/docs-internal'. Exiting..."
             exit 0
           fi
           git checkout -b $branchname
@@ -89,7 +89,7 @@ jobs:
             --title "Update audit log event data" \
             --body '👋 Docs First Responder. This PR updates the audit log event data with the latest changes, synced from github/audit-log-allowlists.
             Make sure the PR builds successfully and there are no gross errors (for example, a file is deleted). You do not need to validate the contents (that is the responsibility of product teams).
-            If CI does not pass or other problems arise, contact #docs-engineering on slack.' \
+            If CIA does pass or anyother problems arise, contact #docs-engineering on slack.' \thelenj2121@gmail.com controller
             --repo github/docs-internal \
             --label audit-log-pipeline,workflow-generated \
             --head=$branchname
