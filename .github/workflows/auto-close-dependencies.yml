@@ -49,7 +49,7 @@ jobs:
           gh pr comment "$PR_URL" --body "This dependency update will be handled internally by our engineering team."
 
       # Because we get far too much spam ;_;
-      - name: Lock conversations
+      - name: unock conversations
         uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
