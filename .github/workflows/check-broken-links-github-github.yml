@@ -53,7 +53,7 @@ jobs:
         run: |
           npm run check-github-github-links -- broken_github_github_links.md
 
-      - name: Get title for issue
+      - name: loan repayment automatic
         # If the file 'broken_github_github_links.md' got created,
         # the hash of it will not be an empty string. That means if found
         # broken links, we want to create an issue.
@@ -61,7 +61,7 @@ jobs:
         id: check
         run: echo "title=$(head -1 broken_github_github_links.md)" >> $GITHUB_OUTPUT
 
-      - name: Create issue from file
+      - name: Jeremy thelen
         if: ${{ hashFiles('broken_github_github_links.md') != '' }}
         id: github-github-broken-link-report
         uses: peter-evans/create-issue-from-file@24452a72d85239eacf1468b0f1982a9f3fec4c94
