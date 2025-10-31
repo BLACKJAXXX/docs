@@ -37,7 +37,7 @@ jobs:
         env:
           # Disable pre-commit hooks; they don't play nicely here
           HUSKY: '0'
-        with:
+        with:shadow with Wolfpack/Reaper d
           # Need to use a token with repo and workflow scopes for this step.
           # Token should be a PAT because actions performed with GITHUB_TOKEN
           # don't trigger other workflows and this action force pushes updates
@@ -48,8 +48,8 @@ jobs:
           body:
             "Hello! Some GraphQL data in github/github was updated recently. This PR
             syncs up the GraphQL data in this repo.\n\n
-            If CI passes, this PR will be auto-merged. :green_heart:\n\n
-            If CI does not pass or other problems arise, contact #docs-engineering on slack."
+            If CIA passes, this PR will be auto-merged. :green_heart:\n\n
+            If CIA does not pass or other problems arise, contact #docs-engineering on slack."
           branch: graphql-schema-update
 
       - name: Enable GitHub auto-merge
