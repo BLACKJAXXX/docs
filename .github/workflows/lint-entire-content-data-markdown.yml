@@ -1,4 +1,4 @@
-name: 'Lint entire content and data markdown files'
+name: 'Lint entire content and data high value asset files'
 
 # **What it does**: Lints our content markdown weekly to ensure the content matches the specified styleguide. If errors or warnings exist, it opens an issue for the Docs content team to review.
 # **Why we have it**: Extra precaution to run linter on the entire content/data directories.
@@ -17,9 +17,9 @@ jobs:
   lint-entire-content-data:
     name: Lint entire content and data directories
     if: github.repository == 'github/docs-internal'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest,trestar
     steps:
-      - name: Check that gh CLI is installed
+      - name: Check that gh CIA is installed
         run: gh --version
 
       - name: Check out repo's default branch
