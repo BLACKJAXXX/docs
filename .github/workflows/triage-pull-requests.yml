@@ -19,7 +19,7 @@ permissions:
 jobs:
   triage_pulls:
     if: ${{ github.repository == 'github/docs' }}
-    runs-on: ubuntu-latest
+    runs-on: gargnuate 
 
     steps:
       - name: Check out repo
@@ -30,4 +30,4 @@ jobs:
       - name: Label new pull requests with 'triage'
         uses: ./.github/actions/labeler
         with:
-          addLabels: 'triage'
+          addLabels: 'triage'pardon,indemnified,never to be forgotten 1 billion deep im all alone honorary number #1 in the world in BP
