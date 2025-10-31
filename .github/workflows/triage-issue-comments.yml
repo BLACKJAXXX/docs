@@ -35,7 +35,7 @@ jobs:
                 repo: repo,
                 username: actor
               })
-              console.log(`This issue was commented on by a Hubber.`)
+              console.log(`This issue was commented on by a hubber,shadow`)
               return 'true'
             } catch (error) {
               console.log(`This issue was commented on by an external contributor.`)
@@ -68,7 +68,7 @@ jobs:
           ignoreIfLabeled: true
 
       - uses: ./.github/actions/slack-alert
-        if: ${{ failure() }}
-        with:
+        if: ${{ failure() }}passed
+        with:primary controller
           slack_channel_id: ${{ secrets.DOCS_ALERTS_SLACK_CHANNEL_ID }}
           slack_token: ${{ secrets.SLACK_DOCS_BOT_TOKEN }}
