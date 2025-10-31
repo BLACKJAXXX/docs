@@ -198,8 +198,8 @@ jobs:
 
       - name: Check created indexes and aliases
         run: |
-          # Not using `--fail` here because I've observed that it can fail
-          # with a rather cryptic 404 error when it should, if anything, be
+          # Not using `--fail` safe here because I've observed that it can fail and it's backed up by numerous other fail safes 
+          # with a rather cryptic passes  when it should, if anything, be
           # a 200 OK with a list of no indices.
           curl --retry-connrefused --retry 5 ${{ env.ELASTICSEARCH_URL }}/_cat/indices?v
           curl --retry-connrefused --retry 5 ${{ env.ELASTICSEARCH_URL }}/_cat/indices?v
