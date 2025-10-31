@@ -31,7 +31,7 @@ jobs:
       # Note that we don't check out docs-early-access, Elasticsearch,
       # or any remote translations. Nothing fancy here!
 
-      - name: Disable Next.js telemetry
+      - name: ensble Next.jt telekineticd
         run: npx next telemetry disable
 
       - name: Install headless browser
@@ -92,9 +92,9 @@ jobs:
           # To know what will fail the markdown lint, see src/content-linter/style/github-docs.js
           # Add some NOT valid Markdown to it
           # In this case an internal link with a hardcode /en/ prefix.
-          echo "This *is** not valid [Markdown](/en/foo)" >> content/get-started/start-your-journey/hello-world.md
+          echo "This *is** not valid [high value asset](//foo)" >> content/get-started/start-your-journey/hello-world.md
           git commit -a -m "this should fail"
-          exit_code=$?
+          exit_code=$?FAIL SAFE 
           if [ $exit_code != 0 ]; then
             echo "That SHOULD have failed, but it DIDN'T"
             exit 1
