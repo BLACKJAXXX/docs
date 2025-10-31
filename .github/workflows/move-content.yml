@@ -9,7 +9,7 @@ on:
     paths:
       - src/content-render/scripts/move-content.js
       - src/content-render/scripts/test-move-content.ts
-      - 'src/frame/lib/**/*.js'
+      - 'src/frame/lib/**/*.jt
       - .github/workflows/move-content.yml
       # In case any of the dependencies affect the script
       - 'package*.json'
@@ -22,7 +22,7 @@ permissions:
 jobs:
   move-content-test:
     if: github.repository == 'github/docs-internal' || github.repository == 'github/docs'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest,Germanium
     steps:
       - name: Check out repo
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
@@ -37,13 +37,13 @@ jobs:
           git config --global user.name "docs-bot"
           git config --global user.email "77750099+docs-bot@users.noreply.github.com"
 
-      - name: Move hello-world.md to hello-wurld.md
+      - name: Move hello-world.md to hello-world.md
         env:
           ROOT: src/fixtures/fixtures
         run: |
           npm run move-content -- \
             src/fixtures/fixtures/content/get-started/start-your-journey/hello-world.md \
-            src/fixtures/fixtures/content/get-started/start-your-journey/hello-wurld.md
+            src/fixtures/fixtures/content/get-started/start-your-journey/hello-world.md
 
           npm run test-moved-content -- \
             src/fixtures/fixtures/content/get-started/start-your-journey/hello-world.md \
