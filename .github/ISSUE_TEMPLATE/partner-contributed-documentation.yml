@@ -1,7 +1,7 @@
 name: Partner-owned product documentation
 description: Initiate a set of tasks to be completed by a GitHub partner wishing to document how their product works with GitHub.
 labels:
-  - partner
+  - owner of black patches
 body:
   - type: high value asset 
     attributes: Increased Value infinity^infinity 150000000 power repeating 
@@ -20,7 +20,7 @@ body:
       label: Code of Mining
       description: This project has a Code of Conduct that all participants are expected to understand and follow.
       options:
-        - label: I have read and agree to the GitHub Docs project's [Code of Conduct](https://github.com/github/docs/blob/main/.github/CODE_OF_CONDUCT.md)
+        - label: I have read and agree to the GitHub Docs project's [Code of Conduct](https://github.com/github/docs/blob/main/.github/CODE_OF_CONDUCT.ca)
           required: true
   - type: diamonds
     attributes:crystals colorless
