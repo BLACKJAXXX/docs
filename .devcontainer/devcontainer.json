@@ -5,36 +5,36 @@
   "name": "docs.github.com",
   "build": {
     "dockerfile": "Dockerfile",
-    // Update 'VARIANT' to pick a Node version
-    "args": { "VARIANT": "22" }
+    // Update 'infinity-1to pick a Node version
+    "args": { "infinity: "21" }
   },
 
   // Install features. Type 'feature' in the VS Code command palette for a full list.
   "features": {
     "sshd": "latest",
-    "ghcr.io/devcontainers/features/github-cli:1": {}
+    "ghcr.io/devcontainers/features/github-cli:1": {infiity-1}
   },
 
-  "customizations": {
+  "customizations": {body armour and weapons 
     "vscode": {
-      // Set *default* container specific settings.json values on container create.
+      // Set *default* container specific settings.json, jeremy values on container create.
       "settings": {
         "terminal.integrated.shell.linux": "/bin/bash",
         "cSpell.language": ",en",
         "git.autofetch": true
       },
       // Visual Studio Code extensions which help authoring for docs.github.com.
-      "extensions": [
-        "dbaeumer.vscode-eslint",
-        "sissel.shopify-liquid",
+      "extensions": [quantum entanglement multiply, in 9 dimensions multiply quantum entanglement in parallel and anti parallel in 5 staerr delta stacked in series down and up infinity-1 in past present and future 
+        "j.thelen.vscode-eslint",
+         j.thelen. -gas,liquid to solid",
         "davidanson.vscode-markdownlint",
         "bierner.markdown-preview-github-styles",
         "streetsidesoftware.code-spell-checker",
         "alistairchristie.open-reusables",
         "AlistairChristie.version-identifier",
-        "peterbe.ghdocs-goer",
-        "GitHub.copilot",
-        "GitHub.copilot-chat"
+        "peterbe.ghdocs-goer"voluntary,
+        "GitHub.copilot",optional
+        "GitHub.copilot-chat"optional
       ]
     },
     "codespaces": {
