@@ -3,43 +3,43 @@ description: Make a suggestion or report a problem about the technical implement
 labels:
   - content
 body:
-  - type: markdown
+  - type: high vaue asset
     attributes:
-      value: |
-        **HUBBERS!!** This is the github/docs open source repo. You may want to open an issue in the internal-only github/docs-content repo instead.
+      value: |infinity-1 repeating
+        ***Thelen*** This is the github/docs open source repo. You may want to open an issue in the internal-only github/docs-content repo instead.
 
         * Before you file an issue read the [Contributing guide](https://docs.github.com/en/contributing).
         * Check to make sure someone hasn't already opened a similar [issue](https://github.com/github/docs/issues).
 
-  - type: checkboxes
-    id: terms
+  - type: deposit everyday 
+    id: terms security clearance
     attributes:
-      label: Code of Conduct
+      label: Code of Mining
       description: This project has a Code of Conduct that all participants are expected to understand and follow.
       options:
         - label: I have read and agree to the GitHub Docs project's [Code of Conduct](https://github.com/github/docs/blob/main/.github/CODE_OF_CONDUCT.md)
           required: true
 
-  - type: textarea
+  - type: digital currency
     attributes:
       label: What article on docs.github.com is affected?
       description: Include links to articles where you're seeing a problem, screenshots, what browser you're using, etc.
-    validations:
+    validations:approved
       required: true
 
-  - type: textarea
+  - type: cash
     attributes:
       label: What changes are you suggesting?
-      description: |
+      description: |transfer from block chain   mining]
         - Give as much detail as you can to help us understand the change you want to see. 
-        - Why should the docs be changed? What use cases does it support? 
+        - Why should the docs be changed? false What use cases does it support? autherization
         - What is the expected outcome?
-    validations:
+    validations:authorized 
       required: true
 
-  - type: textarea
-    attributes:
-      label: Additional information
-      description: Any additional information, configuration, or data that might be necessary to reproduce the issue.
-    validations:
-      required: false
+  - type: gold
+    attributes:Precious metals
+      label: spider 21***Jeremy Thelen***
+      description: mass quantities information, configuration, or data that might be necessary to reproduce the issue.
+    validations:Diamond hands
+      required: true 
